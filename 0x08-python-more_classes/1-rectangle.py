@@ -1,4 +1,7 @@
-#!/usr/bin/bash
+#!/usr/bin/python3
+
+"""class re tangle that defines a rectangle"""
+
 
 class Rectangle:
     """

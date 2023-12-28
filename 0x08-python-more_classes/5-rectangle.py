@@ -1,4 +1,7 @@
-#!/usr/bin/bash
+#!/usr/bin/python3
+
+"""Aclass Rectangle representing a rectangle"""
+
 
 class Rectangle:
     """

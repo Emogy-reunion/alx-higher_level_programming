@@ -1,4 +1,7 @@
-#!/usr/bin/bash
+#!/usr/bin/python3
+
+"""a class Rectangle that defines a rectangle"""
+
 
 class Rectangle:
     """
@@ -103,5 +106,6 @@ class Rectangle:
 
     @classmethod
     def square(cls, size=0):
-        """Class method that returns a new Rectangle instance with equal width and height"""
+        """Class method that returns a new Rectangle
+        instance with equal width and height"""
         return cls(width=size, height=size)
