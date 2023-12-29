@@ -1,6 +1,23 @@
 #!/usr/bin/python3
 
-"""module containing a class rectangle that defines a rectangle"""
+"""
+module containing a class rectangle that defines a rectangle
+
+Attributes:
+    number_of_instances (int): A class attribute that counts the number of instances created.
+    print_symbol (str): A class attribute representing the symbol used for string representation.
+
+Classes:
+    Rectangle: A class representing a rectangle with width and height attributes.
+
+Methods:
+    __init__(): Initializes the attributes of the Rectangle class.
+    width (property): Getter and setter methods for the width attribute.
+    height (property): Getter and setter methods for the height attribute.
+    area(): Calculates and returns the area of the rectangle.
+    perimeter(): Calculates and returns the perimeter of the rectangle.
+    __str__(): Provides a string representation of the rectangle.
+"""
 
 
 class Rectangle:
