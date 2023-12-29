@@ -1,8 +1,6 @@
 #!/usr/bin/python3
 
-"""
-module containing a class rectangle that defines a rectangle
-"""
+"""module containing a class rectangle that defines a rectangle"""
 
 
 class Rectangle:
@@ -10,7 +8,7 @@ class Rectangle:
     A class representing a rectangle
 
     Attributes:
-    height(int) - height of the rectangle
+        height(int) - height of the rectangle
         width(int) - width of the rectangle
 
     methods:
