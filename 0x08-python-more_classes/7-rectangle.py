@@ -77,8 +77,7 @@ class Rectangle:
             return rect_str.strip()
 
     def __repr__(self):
-        """method to provide a string representation for
-        recreation"""
+        """method to provide a string representation for recreation"""
         return f"Rectangle({self.__width}, {self.__height})"
 
     def __del__(self):
