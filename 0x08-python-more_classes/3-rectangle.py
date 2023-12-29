@@ -71,4 +71,4 @@ class Rectangle:
             else:
                 for _ in range(self.__height):
                     rectangle_str += '#' * self.__width + '\n'
-                    return rectangle_str.strip()
+                return rectangle_str.strip()
