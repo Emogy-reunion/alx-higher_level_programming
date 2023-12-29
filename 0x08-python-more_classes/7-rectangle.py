@@ -2,9 +2,9 @@
 
 """a class Rectangle that defines a rectangle"""
 
-                                                           class Rectangle:
-    """
-    A class representing a rectangle
+
+class Rectangle:
+    """    A class representing a rectangle
 
     Attributes:
         height(int) - height of the rectangle
@@ -28,7 +28,7 @@
     @property
     def width(self):
         """Retrieves the width"""
-    return self.__width
+        return self.__width
 
     @width.setter
     def width(self, value):
@@ -73,7 +73,7 @@
             return rect_str
         else:
             for _ in range(self.__height):
-                rect_str += str(Rectangle.print_symbol) * self._width + '\n'
+                rect_str += str(Rectangle.print_symbol) * self.__width + '\n'
             return rect_str.strip()
 
     def __repr__(self):
