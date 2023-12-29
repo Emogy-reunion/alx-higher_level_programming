@@ -66,7 +66,7 @@ class Rectangle:
 
     def __str__(self):
         """method to provide a string representation of rectamgle"""
-        rectangle_str = " "
+        rectangle_str = ""
         if self.__width == 0 or self.__height == 0:
             return rectangle_str
         else:
