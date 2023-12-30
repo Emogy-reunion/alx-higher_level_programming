@@ -67,14 +67,12 @@ class Rectangle:
             return the_perimeter
 
     def __str__(self):
-        """method to provide a string representation of rectamgle"""
-        rect_str = ""
-        if self.__width == 0 or self.__height == 0:
-            return rect_str
-        else:
-            for _ in range(self.__height):
-                rect_str += str(Rectangle.print_symbol) * self.__width + '\n'
-            return rect_str.strip()
+        """returns printable string representation of the rectangle"""
+        string = ""
+        if self.__width != 0 and self.__height != 0:
+            string += "\n".join(str(self.print_symbol) * self.__width
+                    for j in range(self.__height))
+        return string
 
     def __repr__(self):
         """method to provide a string representation for recreation"""
