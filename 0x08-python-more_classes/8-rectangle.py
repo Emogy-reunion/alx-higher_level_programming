@@ -29,7 +29,7 @@ class Rectangle:
     @property
     def width(self):
         """Retrieves the width"""
-    return self._width
+        return self._width
 
     @width.setter
     def width(self, value):
