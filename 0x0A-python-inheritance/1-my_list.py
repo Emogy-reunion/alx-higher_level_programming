@@ -2,7 +2,7 @@
 """a class inheriting fromanother class"""
 
 
-class Myclass(list):
+class MyList(list):
     """inherits the list class"""
 
     def __init__(self):
@@ -11,5 +11,5 @@ class Myclass(list):
 
     def print_sorted(self):
         """sorts and prints the sorted list"""
-        sort_list = sort(self)
+        sort_list = sorted(self)
         print(sort_list)
