@@ -1,0 +1,22 @@
+# tests_base_geometry.txt
+
+# Test case for area method
+>>> geometry = BaseGeometry()
+>>> geometry.area()
+Traceback (most recent call last):
+    ...
+Exception: area() is not implemented.
+
+# Test cases for integer_validator method
+>>> geometry.integer_validator("side_length", 5)  # No exception should be raised
+
+>>> geometry.integer_validator("side_length", "not_an_integer")
+Traceback (most recent call last):
+    ...
+TypeError: side_length must be an integer
+
+>>> geometry.integer_validator("side_length", 0)
+Traceback (most recent call last):
+    ...
+ValueError: side_length must be greater than 0
+
