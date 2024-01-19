@@ -2,7 +2,7 @@
 -- The database name will be passed as an argument to the mysql command
 -- If the table second_table already exists, your script should not fail
 CREATE TABLE IF NOT EXISTS second_table(
-	id INT;
+	id INT,
 	name VARCHAR(256),
 	score INT
 	);
