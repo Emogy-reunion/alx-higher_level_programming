@@ -27,7 +27,7 @@ class BaseGeometry:
         if value <= 0:
             raise ValueError(f"{name:s} must be greater than 0")
 
-class Rectangle:
+class Rectangle(BaseGeometry):
     """
     a represantation of a rectangle
     """
