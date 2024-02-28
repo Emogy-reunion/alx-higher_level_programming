@@ -29,3 +29,22 @@ TypeError: a must be an integer
 >>> add_integer(7, "string")
 Traceback (most recent call last):
 TypeError: b must be an integer
+
+# Test when the first argument is a NaN float
+>>> add_integer(float('nan'))
+Traceback (most recent call last):
+ValueError: cannot convert float NaN to integer
+
+# Test when the result is too large to convert to float
+>>> add_integer(2**100)
+Traceback (most recent call last):
+OverflowError: int too large to convert to float
+
+# Test adding an integer with the default value of b
+>>> add_integer(7)
+105
+
+# Test when both arguments are missing
+>>> add_integer()
+Traceback (most recent call last):
+TypeError: add_integer() missing 1 required positional argument: 'a'
