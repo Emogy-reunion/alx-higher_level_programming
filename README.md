@@ -1,4 +1,4 @@
-** HIGH LEVEL PROGRAMMING
+## HIGH LEVEL PROGRAMMING
 * This repository contains high level languages projects
 * There are various directories tackling speciic topics in python programming language and javsscript and also mysql
 * Higher-level programming refers to programming languages and paradigms that abstract away low-level details and provide more expressive and easier-to-use constructs for developers. Here are some key aspects of higher-level programming:
