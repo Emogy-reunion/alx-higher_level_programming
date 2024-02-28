@@ -1,0 +1,31 @@
+#using 0-add_integer module
+#using add_integer function
+
+#Importing the function from the module:
+>>> add_integer = __import__("0-add_integer").add_integer
+
+#Test if a is an integer and b is an integer:
+>>> add_integer(7, 7)
+14
+
+#Test if a is an integer and b is a float:
+>>> add_integer(7, 7.5)
+14
+
+#Test if a is a float and b is an integer:
+>>> add_integer(7.5, 7)
+14
+
+#Test if both a and b are floats:
+>>> add_integer(8.5, 8.5)
+16
+
+#Test if a is a string and b is an integer:
+>>> add_integer("string", 7)
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+#Test if a is an integer and b is a string:
+>>> add_integer(7, "string")
+Traceback (most recent call last):
+TypeError: b must be an integer
