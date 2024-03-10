@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-Contains function that returns the dictionary description with simple data structure
+Contains function that returns the dictionary
+description with simple data structure
 """
 
 
