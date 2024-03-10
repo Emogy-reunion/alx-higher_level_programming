@@ -1,12 +1,10 @@
 #!/usr/bin/python3
-"""handles reading data from a file"""
+"""
+It contains the read_file function
+"""
 
 
-def read_file(filename=" "):
-    """
-    Args:
-        :filename: path to the file
-    """
-    with open(filename, "r", encoding='utf-8') as file:
-        data = file.read()
-        print(data, end=" ")
+def read_file(filename=""):
+    """""reads a text file(UTF8) and prints it to stdout"""
+    with open(filename, "r", encoding="utf-8") as file:
+        print(file.read(), end="")
