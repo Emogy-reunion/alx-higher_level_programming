@@ -11,5 +11,5 @@ class State(Base):
     """Maps table to the database"""
     __tablename__ = "states"
 
-    id = Column(Integer, primary_key=True, auto_increment=True, nullable=False)
+    id = Column(Integer, primary_key=True, nullable=False)
     name = Column(String(128), nullable=False)
