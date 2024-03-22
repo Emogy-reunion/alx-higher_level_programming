@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-"""changes the name of a State
-object from the database hbtn_0e_6_usa"""
+"""deletes all State objects that contain the letter a
+from the database hbtn_0e_6_usa"""
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy import create_engine
 from model_state import Base, State
@@ -15,8 +15,9 @@ if __name__ == "__main__":
     Base.metadata.create_all(engine)
     Session = sessionmaker(bind=engine)
     session = Session()
-    query = session.query(State).filter_by(id=2)
-    instance = query.first()
-    if instance:
-        instance.name = "New Mexico"
+    query = session.query(State).filter(
+            State.name.like('%a%')).order_by(State.id)
+    instances = query.all()
+    for instance in instances:
+        session.delete(instance)
     session.commit()
