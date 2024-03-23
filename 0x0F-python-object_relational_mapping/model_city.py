@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-"""definition of a City class"""
-from sqlalchemy import create_engine, Column, String, Integer
+"""definition of a city class"""
+from sqlalchemy import create_engine, Column, String, Integer,ForeignKey
 from sqlalchemy.ext.declarative import declarative_base
 
 
@@ -13,3 +13,4 @@ class City(Base):
 
     id = Column(Integer, primary_key=True, nullable=False)
     name = Column(String(128), nullable=False)
+    state_id = Column(Integer, ForeignKey('states.d'), nullable=False)
