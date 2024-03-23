@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """definition of a city class"""
-from sqlalchemy import create_engine, Column, String, Integer,ForeignKey
+from sqlalchemy import create_engine, Column, String, Integer, ForeignKey
 from sqlalchemy.ext.declarative import declarative_base
 
 
