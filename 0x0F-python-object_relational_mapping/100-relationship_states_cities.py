@@ -20,6 +20,5 @@ if __name__ == '__main__':
 
     newState = State(name='California')
     newCity = City(name='San Francisco', state=newState)
-    session.add(newState)
     session.add(newCity)
     session.commit()
